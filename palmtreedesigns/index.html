@@ -74,10 +74,10 @@
                 </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="index.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -87,30 +87,36 @@
 
   <!-- Image Slider-->
 
-  <header>
-      <div class="container-carousel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" interval="5000">
-       <div class="carousel-inner">
-         <div class="carousel-item active">
-            <img class="d-block w-95 img-resize" src="imgs/shirt2.jpg" alt="First slide">
+   <div id="carouselFull" class="carousel slide" data-ride="carousel" interval="5000">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="d-block img-fluid" src="imgs/shirt2.jpg" alt="First slide">
           </div>
+
           <div class="carousel-item">
-                <img class="d-block w-95" src="imgs/shirt1.jpg" alt="Second slide">
+              <img class="d-block img-fluid" src="imgs/shirt1.jpg" alt="Second slide">
+          </div>
+
+          <div class="carousel-item">
+              <img class="d-block img-fluid" src="imgs/shirt3.jpg" alt="Third slide">
+          </div>
+          <div class="main-text hidden-xs">
+              <div class="col-md-12 text-center">
+                  <img src="imgs/brandtitle.png" class="brandtitle"></a>
+                  <h3 class="brandinfo">
+                      Hand Embroidered Clothing
+                  </h3>
               </div>
-              <div class="carousel-item">
-                    <img class="d-block w-95" src="imgs/shirt3.jpg" alt="Third slide">
-                  </div>
-                  <div class="main-text hidden-xs">
-                        <div class="col-md-12 text-center">
-                            <img src="imgs/brandtitle.png" class="brandtitle"></a>
-                            <h3 class="brandinfo">
-                                Hand Embroidered Clothing
-                            </h3>
-                        </div>
-           </div>
-        </div>
+      </div>
   </div>
-  </header>
+   
+
+
 
   <div>
     <div class="container-infobox">

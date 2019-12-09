@@ -18,36 +18,10 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 1px;
 }
 
-.container-carousel {
-    width: 100%;
-    max-height: 60% !important;
-    min-height: 60% !important;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 50px !important;
-    top: 90px;
-}
-
-
-.carousel-item {
-    max-height: 90% !important;
-    min-height: 90%;
-     background: no-repeat center center 0px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.carousel-item>img {
-    max-height: 200px;
-    min-height: 200px;
-}
 
 .main-text {
     position: absolute;
-    top: 60px;
+    top: 20%;
     right: 20px;
     color: black;
     height: 100px;
@@ -55,6 +29,16 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: white;
 }
 
+
+#carouselFull {
+    top: 10%;
+}
+
+.carousel-item .img-fluid {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
 
 .brandtitle {
     padding-top: 20px;
@@ -295,13 +279,14 @@ h1, h2, h3, h4, h5, h6, p {
     color: black;
     z-index: 4;
 }
+
 .text-box p {
    font-size: 13px;
 
 }
 
 .container-infobox {
-    margin-top: 100px;
+    margin-top: 15px;
 }
 
 .infobox {
@@ -309,6 +294,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     color: white;
     width: 90%;
+    max-width: 90%;
     margin: 0 auto;
     font-size: 0.6rem;
     display: block;
@@ -522,7 +508,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
     
     .info-img {
-        width: 40%;
+        width: 30%;
         height: auto;
         margin: 0 auto;
     }
@@ -539,6 +525,8 @@ h1, h2, h3, h4, h5, h6, p {
         padding-right: 15px;
         font-family: 'Manjari', sans-serif;
         font-size: 1rem;
+        margin-left: 0px;
+        margin-right: 0px
     
     }
     
@@ -612,6 +600,8 @@ h1, h2, h3, h4, h5, h6, p {
 #imgHolder {
     padding: 0px;
     text-align:center;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .responsive {
@@ -619,6 +609,11 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 250px !important;
     height: auto;
     margin: 0 auto;
+}
+
+.toggleimage {
+    width: 80px;
+    height: 100px;
 }
  
 
@@ -668,35 +663,22 @@ body {
 }
 
 
-.carousel-item {
-    height: 85vh;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+#carouselFull {
+    top: 3%;
 }
 
-.carousel-item>img {
-    max-height: 600px;
-    min-height: 600px;
-}
-
-.container-carousel {
-    width: 1100px !important;
-    height: 600px !important;
-    display: block;
-    position: relative;
+.carousel-item .img-fluid {
+    width: 85%;
+    height: auto;
     margin: 0 auto;
-    margin-bottom: 0px !important;
-    top: 40px;
 }
 
 
 .main-text {
     position: absolute;
-    top: 125px !important;
-    right: 20px;
+    top: 30%;
+    right: 10%;
     color: black;
     height: 300px !important;
     width: 300px !important;
@@ -722,8 +704,7 @@ body {
 }
 
 .brandimage {
-    min-width: 200px !important;
-    max-width: 200px !important;
+    min-width: 200px;
     margin-left: 0px !important;
 }
 
@@ -748,12 +729,16 @@ body {
     
 }
 
+.nav-item {
+    font-size: 1rem;
+}
+
 .nav-link {
     margin-left: 10px;
 }
 
 .container-infobox {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .infobox {
@@ -761,9 +746,12 @@ body {
     text-align: center;
     color: white;
     width: 75%;
-    padding: 10px 5px 10px 5px;
+    max-width: 75%;
     margin: 0 auto;
     font-size: 1rem;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .fas {
@@ -869,7 +857,7 @@ iframe {
   width: 28%;
   display: inline-block;
   position: absolute;
-  left: 60%;
+  right: 13%;
   top: 40%;
 
 }
@@ -879,15 +867,17 @@ iframe {
      width: 400px;
      height: 400px;
      font-size: 1rem;
+     margin: 0 auto;
      display: inline-block;
-     position: absolute;
-     left: 35%;
      top: 30%;
-     padding: 50px;
+     left: 35%;
+     position: absolute;
+     padding: 30px;
      background-color: white;
      color: black;
      z-index: 4;
  }
+
  .text-box p {
     font-size: 13px;
 
@@ -1153,15 +1143,6 @@ iframe {
     padding-top: 100px;
 }
 
-.shop-image {
-    width: 100%;
-    height: auto;
-    max-width: 400px !important;
-    min-width: 400px !important;
-    height: auto;
-    margin: 0 auto;
-    margin-left: 80px !important;
-}
 
 .specbtn2 {
     background-image: url("../imgs/button.png");
@@ -1191,7 +1172,8 @@ iframe {
 }
 
 .info-img {
-    width: 40%;
+    width: 30%;
+    max-width: 30%;
     height: auto;
     margin: 0 auto;
 }
@@ -1200,6 +1182,7 @@ iframe {
 .lead {
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .description3 {
@@ -1207,16 +1190,27 @@ iframe {
     padding-top: 40px;
     font-family: 'Manjari', sans-serif;
     font-size: 1rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px
 
+}
+
+.scroll-2 {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .image-container {
     text-align: center;
+    margin: 0 auto;
+    max-width: 30%;
     
 }
 
 .smallfooter {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -1262,7 +1256,6 @@ iframe {
 #imgThumbs {  
     overflow: hidden;
     margin: 0 auto;
-    width: 396px;
     text-align: center;
     margin-left: 30px;
     margin-top: 100px;
@@ -1282,6 +1275,7 @@ iframe {
     padding: 20px;
     text-align:center;
     width: 100%;
+    padding-left: 60px;
 }
 
 .responsive {
@@ -1289,6 +1283,254 @@ iframe {
     min-width: 400px;
     max-width: 600px !important;
     height: auto;
+}
+
+.toggleimage {
+    width: 80px;
+    height: 100px;
+}
+ 
+
+.extrainfo {
+        font-size: 1rem;
+}
+
+
+}
+
+@media screen and (min-width:1438px) {
+
+.infobox {
+    background-color: rgb(146, 145, 145);
+    text-align: center;
+    color: white;
+    width: 65%;
+    max-width: 65%;
+    margin: 0 auto;
+    font-size: 1rem;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-items, .footer-headings {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 10px;
+
+}
+
+
+
+.image1 {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    left: 13%;
+    top: 20%;
+}
+
+.image2 {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  right: 13%;
+  top: 40%;
+}
+
+
+.section2 {
+    background-color: #cbcfcc;
+    height: 800px;
+    position: relative;
+}
+
+
+
+.text-box {
+    width: 400px;
+    height: 400px;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: inline-block;
+    top: 30%;
+    left: 38%;
+    position: absolute;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    z-index: 4;
+}
+
+.text-box p {
+   font-size: 1rem;
+}
+
+
+
+}
+
+@media screen and (min-width:1800px) {
+
+    
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.brandimage {
+    min-width: 300px;
+    margin-left: 0px !important;
+}
+
+.individual-item {
+    padding-top: 200px;
+}
+
+.text-box {
+    width: 500px;
+    height: 500px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: inline-block;
+    top: 30%;
+    left: 38%;
+    position: absolute;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    z-index: 4;
+}
+
+.text-box p {
+   font-size: 20px;
+
+}
+
+.image1 {
+    width: 28%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.image2 {
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  right: 18%;
+  top: 40%;
+
+}
+
+
+.section2 {
+    background-color: #cbcfcc;
+    height: 1100px;
+    position: relative;
+}
+
+.description3 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px
+
+}
+
+.description2 {
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.5rem;
+}
+
+.extrainfo {
+    font-size: 1.5rem;
+}
+
+.lead {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+/* Image toggle */
+
+#imgThumbs {  
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 140px;
+
+}
+.showImg { 
+    width: 100% !important; 
+    padding: 15px; 
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+   
+}
+
+.responsive {
+    width: 100%;
+    min-width: 650px;
+    max-width: 650px !important;
+    height: auto;
+    margin: 0 auto;
+}
+
+#imgHolder {
+    padding: 20px;
+    padding-left: 60px;
+    text-align:center;
+    width: 100%;
+}
+
+.toggleimage {
+    width: 140px;
+    height: auto;
+}
+
+}
+
+@media screen and (min-width:2400px) {
+
+.text-box p {
+    font-size: 27px;
+
+}
+
+.text-box {
+    width: 620px;
+    height: 620px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: inline-block;
+    top: 30%;
+    left: 38%;
+    position: absolute;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    z-index: 4;
+}
+
+.section2 {
+    background-color: #cbcfcc;
+    height: 1300px;
+    position: relative;
 }
 
 
