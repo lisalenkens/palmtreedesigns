@@ -11,6 +11,7 @@ html, body {
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -32,6 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #carouselFull {
     top: 10%;
+    margin: 0 auto;
 }
 
 .carousel-item .img-fluid {
@@ -62,6 +64,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .shopcart {
     color: black;
+    font-size: 0.8rem;
+    padding-left: 20px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
 }
 
 .shopcart:hover {
@@ -73,6 +79,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Manjari', sans-serif;
 }
 
+.navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+
+}
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
     box-shadow: none;
@@ -81,6 +92,8 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: white;
+    font-size: 1rem;
+    padding-left: 0rem;
 }
 
 
@@ -174,8 +187,8 @@ h1, h2, h3, h4, h5, h6, p {
     left: auto;
     bottom: 0;
     right: 0;
-    margin-bottom: 3%;
-    margin-right: 2%;
+    margin-bottom: 5%;
+    margin-right: 4%;
     display: none;  
   } 
 
@@ -213,14 +226,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-.fab {
+.footersocial {
     color: white;
     margin: 0 auto;
     padding: 15px;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(60, 129, 89), 0 0 5px rgb(12, 70, 5);
 }
 
-.fab:hover {
+.footersocial:hover {
     color: black;
 }
 
@@ -293,8 +306,8 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgb(146, 145, 145);
     text-align: center;
     color: white;
-    width: 90%;
-    max-width: 90%;
+    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     font-size: 0.6rem;
     display: block;
@@ -347,7 +360,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .button1 {
     font-family: 'Ubuntu Condensed', sans-serif; 
-    margin-left: 150px;
+    margin: 0 auto;
+    margin-left: 10px;
 }
 
 .card-text {
@@ -358,7 +372,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* Women Clothing page small screen */
 
 .jumbotron {
-    background-image: url("../imgs/womenbanner2.jpg");
+    background-image: url("../imgs/womenbanner.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -602,7 +616,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align:center;
     width: 100%;
     padding-left: 0px;
-    padding-top: 50px;
+    padding-top: 15px;
 }
 
 .responsive {
@@ -628,20 +642,126 @@ iframe {
 .instafeed {
     margin: 0px auto !important;
     text-align: center;
+    max-width: 85% !important;
     
 }
 
+/* Instagram Gallery feed */
+.container-i{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-i {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-i:hover .image-i {
+    opacity: 0.7;
+  }
+  
+  .container-i:hover .middle {
+    opacity: 1;
+  }
+  
+  .icon {
+    background-color: transparent;
+    color: rgba(37, 35, 35, 0.507);
+    font-size: 16px;
+    padding: 16px 32px;
+    text-shadow: 1px 1px 10px white;
+  }
+  
 
+.insta-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /*Four equal columns that sit next to each other */
+  .insta-column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .insta-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 
+  .instahover {
+     opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.instahover:hover {
+	opacity: .7;
+}
 }
 
 
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .insta-column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .insta-column {
+      -ms-flex: 75%;
+      flex: 75%;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (min-width: 1800px) {
+    .insta-column {
+      -ms-flex: 20%;
+      flex: 20%;
+      max-width: 20%;
+      margin: 0 auto;
+    }
+  }
 
 
 
 
 
-/* Larger Screens */
+
+
+
+
+
+/* Medium Screens */
 
 
 
@@ -659,14 +779,11 @@ html, body {
     padding-top: 0px !important;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 
 
 #carouselFull {
     top: 3%;
+    margin: 0 auto;
 }
 
 .carousel-item .img-fluid {
@@ -714,6 +831,8 @@ body {
     padding-left: 60px !important;
     padding-right: -20px !important;
     margin-right: 0px !important;
+    font-size: 1rem;
+
 }
 
 .shopcart:hover {
@@ -731,7 +850,7 @@ body {
 }
 
 .nav-item {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .nav-link {
@@ -783,12 +902,15 @@ body {
     
 }
 
+
 .card {
     width: 80%;
     padding: 0 auto;
     margin: 0 auto;
     text-align: center;
     filter: contrast(120%);
+    padding-right: 5px;
+    padding-left: 5px;
 
 }
 
@@ -829,9 +951,11 @@ body {
       -webkit-transform: scale(1.4);
   }
 
-.instafeed {
+  .instafeed {
     margin: 0px auto !important;
-   
+    text-align: center;
+    max-width: 80% !important;
+    
 }
 
 iframe {
@@ -953,7 +1077,7 @@ iframe {
 }
 
 
-.fab {
+.footersocial {
     color: white;
     margin: 0 auto;
     padding: 15px;
@@ -961,7 +1085,7 @@ iframe {
 
 }
 
-.fab:hover {
+.footersocial:hover {
     color: black;
 }
 
@@ -1024,7 +1148,8 @@ iframe {
 
 .button1 {
     font-family: 'Ubuntu Condensed', sans-serif; 
-    margin-left: 150px;
+    margin: 0 auto;
+    margin-left: 10px;
 }
 
 .card-text {
@@ -1040,7 +1165,7 @@ iframe {
 
 
 
-/* Women Clothing page large screens */
+/* Women Clothing page medium screen */
 
 .jumbotron {
     background-image: url("../imgs/womenbanner.jpg");
@@ -1057,10 +1182,10 @@ iframe {
     color: white;
     text-shadow: -1px 3px 25px rgba(0,0,0,0.94);
     font-weight: bold;
+    vertical-align: center;
+    padding-right: 5%;
 
 }
-
-
 
 .card-image-top {
     height: 40vh;
@@ -1297,8 +1422,57 @@ iframe {
         font-size: 1rem;
 }
 
+.container-i{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-i {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-i:hover .image-i {
+    opacity: 0.7;
+  }
+  
+  .container-i:hover .middle {
+    opacity: 1;
+  }
+  
+  .icon {
+    background-color: transparent;
+    color: rgba(37, 35, 35, 0.507);
+    font-size: 16px;
+    padding: 16px 32px;
+    text-shadow: 1px 1px 10px white;
+  }
+
 
 }
+
+
+/* Larger Screens */
+
+
+
+
+
 
 @media screen and (min-width:1438px) {
 
@@ -1374,16 +1548,57 @@ iframe {
 
 }
 
+
+
+
+
+/* Extra Large Screens */
+
 @media screen and (min-width:1800px) {
 
     
 .nav-item {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .brandimage {
     min-width: 300px;
     margin-left: 0px !important;
+}
+
+
+.carousel-item .img-fluid {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.main-text {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    color: black;
+    height: 400px !important;
+    width: 400px !important;
+    background-color: white;
+}
+
+.brandtitle {
+    padding-top: 80px !important;
+    width: 330px !important;
+    z-index: 10;
+   
+}
+
+.brandinfo {
+    padding-top: 50px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.5rem; 
+    background-color: white;
+    z-index: 10;
+    
 }
 
 .individual-item {
@@ -1507,6 +1722,13 @@ iframe {
 }
 
 }
+
+
+
+
+
+
+/* HD Screens */
 
 @media screen and (min-width:2400px) {
 
