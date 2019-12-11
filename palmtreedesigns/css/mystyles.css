@@ -518,14 +518,22 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .text-center {
-        padding-right: 0px 0px 0px 0px !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .image-container {
+        padding: 0px 0px 0px 0px !important;
     }
     
+    .extra-info {
+        font-size: 1rem;
+    }
     
     .extrasection {
         margin-top: 100px;
     
     }
+
     
     .info-img {
         width: 30%;
@@ -536,6 +544,7 @@ h1, h2, h3, h4, h5, h6, p {
     .lead {
         padding-top: 0rem;
         padding-bottom: 0rem;
+        font-size: 1rem;
     }
     
     .description3 {
@@ -544,12 +553,16 @@ h1, h2, h3, h4, h5, h6, p {
         padding-left: 15px;
         padding-right: 15px;
         font-family: 'Manjari', sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-left: 0px;
         margin-right: 0px
     
     }
-    
+    .container-info {
+        max-width: 90% !important;
+        margin: 0 auto;
+    }
+
     .image-container {
         text-align: center;
     }
@@ -628,7 +641,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align:center;
     width: 100%;
     padding-left: 0px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .responsive {
@@ -655,6 +668,7 @@ iframe {
     margin: 0px auto !important;
     text-align: center;
     max-width: 85% !important;
+    padding-bottom: 20px;
     
 }
 
@@ -707,6 +721,7 @@ iframe {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+  
   }
   
   /*Four equal columns that sit next to each other */
@@ -789,6 +804,14 @@ html, body {
     margin: 0px;
     padding: 0px;
     padding-top: 0px !important;
+}
+
+.text-center {
+    padding: 0px 0px 0px 0px !important;
+}
+
+.image-container {
+    padding: 0px 0px 0px 0px !important;
 }
 
 
@@ -967,6 +990,7 @@ html, body {
     margin: 0px auto !important;
     text-align: center;
     max-width: 80% !important;
+    padding-bottom: 20px;
     
 }
 
@@ -1305,6 +1329,10 @@ iframe {
     font-size: 1rem;
 }
 
+.extra-info {
+    font-size: 1rem;
+}
+
 .extrasection {
     margin-top: 100px;
 
@@ -1321,7 +1349,7 @@ iframe {
 .lead {
     padding-top: 2rem;
     padding-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .description3 {
@@ -1432,7 +1460,7 @@ iframe {
  
 
 .extrainfo {
-        font-size: 1rem;
+        font-size: 1.5rem;
 }
 
 .container-i{
